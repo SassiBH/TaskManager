@@ -68,8 +68,8 @@ Make sure the following are installed on your system before proceeding:
 ### Home Page
 ![Home Page](ReadmeImages/home.png)
 
-### Sgin Up Page
-![Sgin Up Page](ReadmeImages/signup.png)
+### Sign Up Page
+![Sign Up Page](ReadmeImages/signup.png)
 
 ### Login Page
 ![Login Page](ReadmeImages/login.png)
