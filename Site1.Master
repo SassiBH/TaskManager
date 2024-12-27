@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="TasksManager.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Task Manager</title>
+    <!--  the bootstarp css file -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- the fontawesome css file -->
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+        /* Make the entire page take at least 100% of the height */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Use flexbox layout */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure full page height */
+        }
+
+        .content {
+            flex-grow: 1; /* Allow content to take all available space */
+            padding-bottom: 100px; /* Ensure space for footer */
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #0a4275;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: -webkit-fill-available;
+        }
+    </style>
+
+</head>
+<body >
+    <form id="form1" runat="server">
+
+        <!-- Navbar -->
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <img src="imgs/TaskLogo.png" alt="logo" width="40">
+                <a class="navbar-brand" href="Home.aspx">Task Manager</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="Home.aspx">Home</a>
+                        <a class="nav-item nav-link" href=" Home.aspx#About">About</a>
+                        <a class="nav-item nav-link" href="CreateAccountPage.aspx">Sign up</a>
+                        <a class="nav-item nav-link" href="LoginPage.aspx" tabindex="-1">Login</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Content -->
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Task Manager. All rights reserved.</p>
+    </footer>
+
+        
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+# Build directories
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.rsuser
+
+# Auto-generated files
+*.designer.cs
+
+# Packages and dependencies
+packages/
+node_modules/
+
+# Backup and temp files
+*.bak
+*.swp
+*~
+*.tmp
+
+# ASP.NET specific
+*.Publish.xml
+*.PublishSettings
+*.config.*
+
+# Logs
+*.log
+
+# Images
+imgsfolder.jpg
+imgspiece-*.jpg
+
+# Other
+TaskManagementBackup/
